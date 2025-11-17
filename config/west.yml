@@ -2,11 +2,11 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: sayu-hub  # pmw3610-driverのフォーク
+    - name: sayu-hub  # pmw3610-driver のフォーク
       url-base: https://github.com/sayu-hub
-        - name: Dist16384   # <- あなたのフォークを指す remote
-    url-base: https://github.com/Dist16384
-    
+    - name: Dist16384   # あなたのフォーク
+      url-base: https://github.com/Dist16384
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -17,5 +17,6 @@ manifest:
       remote: Dist16384
       revision: main
       path: modules/zmk-pmw3610-driver
+
   self:
     path: config
